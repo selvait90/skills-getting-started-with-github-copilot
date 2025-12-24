@@ -79,9 +79,9 @@ section h3 {
 }
 
 .participants-list {
-  list-style: disc inside;
+  list-style: none;
   margin-top: 6px;
-  padding-left: 18px;
+  padding-left: 0;
   display: block;
 }
 
@@ -93,6 +93,23 @@ section h3 {
   margin-bottom: 6px;
   font-size: 14px;
   color: #455a64;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-participant {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.delete-participant:hover {
+  background: rgba(198, 40, 40, 0.08);
 }
 
 /* Placeholder when no participants */
